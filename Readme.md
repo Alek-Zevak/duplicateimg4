@@ -1,4 +1,4 @@
-# Duplicate File Detection and Management
+# Duplicateimg4
 
 ## Description
 
@@ -96,4 +96,5 @@ Videos are compared based on several parameters, such as duration, resolution, a
     **min_similar_percentage**: Adjust the minimum percentage of similar frames required to consider two videos as duplicates.
 
 4. Add New File Types
+
 Currently, the script is set to handle images and videos in certain formats. If you want to include other file types, you can add their extensions to the EXT_IMAGE and EXT_VIDEO variables. You would also need to implement an appropriate comparison algorithm for those file types.
