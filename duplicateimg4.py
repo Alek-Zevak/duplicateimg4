@@ -223,7 +223,8 @@ def hash_video(path, frame_step=FRAME_STEP):
 def hamming_distance(h1, h2):
     try:
         return imagehash.hex_to_hash(h1) - imagehash.hex_to_hash(h2)
-    except:
+    except Exception as e:
+        print(f"Error: {e}")
         return 9999
 
 def compare_videos(v1, v2, dur1, dur2,
@@ -738,8 +739,9 @@ class DuplicateFinderGUI:
 
 def main():
     root = tk.Tk()
-    app = DuplicateFinderGUI(root)
+    DuplicateFinderGUI(root)
     root.mainloop()
 
 if __name__ == "__main__":
     main()
+
