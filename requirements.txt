@@ -2,6 +2,4 @@ ImageHash==4.3.2
 numpy==2.2.6
 opencv-python==4.12.0.88
 pillow==12.0.0
-PyWavelets==1.9.0
-scipy==1.16.3
 Send2Trash==1.8.3
